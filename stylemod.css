@@ -1,0 +1,572 @@
+@import url(/grid.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+:root {
+  --cor-botoes: #ABF4F0;
+  --cor-cards: #F8F9FB;
+  --cor-seguidores: #F9F9F9;
+  --cor-tag:#959FF2
+}
+
+.topo {
+  top: 0;  
+  width: 100%;
+  height: 64px;
+  background-color: var(--cor-tag);
+  position: sticky;
+  box-sizing:border-box;
+  padding: 8px 70px 8px 64px;
+  box-shadow: 0px 2px 8px #959FF2;
+  z-index: 30;
+}
+.tractor {
+  width: 100%;
+  width: 40%;
+  margin-top: 2%;
+  margin-left: 64px;
+}
+
+.logo:hover, .noticias:hover {
+  cursor: pointer;
+}
+input {
+  color: black;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  box-sizing:border-box;
+  padding: 14px;
+  border:solid 1px #C7C7C7;
+
+}
+.botoes {
+  width: 48px;
+  height: 48px;
+  padding: 14px;
+  border-radius: 4px;
+  border: 0px;
+}
+
+
+
+.botoesnot { position: relative;
+}
+.redpoint {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.corpesquisa, .postbuttonfinal, .postbutton {
+  background-color: rgb(78, 78, 201);
+}
+.botoes, .corpesquisa:hover, .postbuttonfinal:hover {
+  cursor: pointer;
+}
+
+.containerbotton {
+  float: right;
+  display: flex;
+  gap: 8px;
+}
+.pesquisa {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 379px;
+  gap: 8px; 
+}
+.logo, .logomobile {
+  display: flex;
+  position: absolute;
+}
+main {
+  display: flex;
+  background-color: white;
+  padding: 24px 0px 0px 32px;
+  column-gap: 30px;
+}
+.card1 {
+  width: 30vw;
+  height: 100%;
+  background-color: var(--cor-cards);
+}
+.card2 {
+  height: 100%;
+  width: 40vw;
+}
+.card3 {
+  height: 100%;
+  width: 20vw;
+}
+.card {
+  min-height: auto;
+  /*background-color: var(--cor-cards);
+  border: solid #E0E0E0 1px;*/
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+.card1 .mascara {
+  width: 100%;
+  height: 178px;
+  overflow: hidden;
+}
+
+.mascarapost {
+  width: 97%;
+  margin: 10px 0px 20px 10px;
+  height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  
+}
+.mascarapost img {
+  width: 100%;
+  margin-top: -55px;
+}
+
+.textofrank {
+  padding: 20px 10px 0px 10px;
+}
+.card1 .mascara img {
+margin-top: -100px;
+width: 100%;
+min-height: 178px;
+
+}
+.card1 .mascara2 {
+  border: 1px solid var(--cor-botoes);
+  margin-top: -55px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border-radius: 4px;
+}
+.card1 .mascara2 img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+
+section h1, p{
+ text-align: center;
+ padding: 0px 41px;
+}
+.seguidores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing:border-box;
+  background-color: rgb(221, 215, 215);
+  border-radius: 5px;
+  width: 100%;
+  height: 69px;
+  font-size: 1rem;
+}
+.biografiaEtta {
+  margin: 8px;
+}
+.quantidades {
+  margin: 0;
+}
+.follow {
+  display:flex;
+  padding: 31px 40px 31px 40px;
+  column-gap: 24px;
+  border-bottom: 1px solid #E0E0E0;
+  margin-right: 20px;
+  margin-left: 20px;
+  }
+  .botoespagina {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 24px;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 8px;
+    
+  }
+  .botoespagina img {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .botoespagina:first-child {
+     margin-top: 0px;
+  }
+  .botoespagina:hover, .seguidores:hover, .botoes:hover, .NewStories:hover {
+    background-color: var(--cor-botoes);
+   
+  }
+  .espacamentobotoespagina {
+    padding: 49px 41px 25px 40px;
+    
+  }
+  .stories {
+    min-height: 20%;
+    margin-top: 5px;
+    display: flex;
+    position: relative;
+    overflow:auto;
+    width: 100%;
+    height: 180px;
+    border-radius: 4px;
+  }
+  .card2 {
+    row-gap: 15px;
+    padding: 0px 10px;
+  }
+
+  .PhotoStorie, .NewStories {
+    display: flex;
+    height: 154px;
+    min-width: 120px;
+    border: black solid 1px;
+    margin-left: 8px;
+    border-radius: 4px;
+  }
+  .NewStories {
+   display: flex;
+   margin-left: 0px;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-size: 15px;
+   border: dotted black 1px;
+   min-width: 120px;
+   min-height: 150px;
+  }
+ .icon img {
+  width: auto;
+ height: auto;
+ }
+  .PhotoStorie:hover, .tamanhofriends:hover, .botoespagina:hover, .NewStories:hover, .seguidores:hover, .postbutton:hover {
+    cursor: pointer;
+  }
+  .PhotoStorie  img {
+    min-width:120px;
+    max-width: 150px;
+    min-height: 150px;
+    min-height:152px;
+    width: auto;
+    height: auto;
+  }
+ .newpost  {
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color:var(--cor-cards);
+  flex-direction: column;
+ }
+ .postwithcoment {
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  background-color:var(--cor-cards);
+  flex-direction: column;
+ }
+
+ .newpost img {
+  border-radius: 4px;
+  margin-left: 10px;
+ }
+
+ .mascaraperfil img {
+  width: 48px;
+  height: 48px;
+
+ }
+.postbuttonfinal {
+  border: 0;
+  border-radius: 4px;
+  float: right;
+  width: 103px;
+  height: 47px;
+  padding: 14px 28px;
+  margin-right: 12px;
+  margin-bottom: 14px;
+  color: white;
+}
+.postbuttonfinal:hover, .postbutton:hover {
+  color: white;
+  background-color: var(--cor-botoes);
+}
+  .groupbutton {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  margin-left: 10%;
+  margin-top: 2%;
+  }
+.postbutton {
+  border: 0px;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+ .postperfil{
+  display: flex;
+  margin-top: 2%;
+  width: 100%;
+  height: 40%;
+  
+ }
+ textarea {
+  display: flex;
+  margin-left: 20px;
+  width: 80%;
+  height: 60%;
+  border-radius: 4px;
+  padding: 20px 20px;
+ }
+
+.postout {
+  display: flex;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  background-color: var(--cor-cards);
+  border: solid 1px black;
+  border-radius: 4px;
+  border: black solid 1px;
+  flex-direction: column;
+}
+
+.amigos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 13px 0px;
+
+}
+.friends-links  {
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height:55%;
+  display: flex;
+  background-color: var(--cor-cards);
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  margin-bottom: 10%;
+ 
+
+}
+ .Titulocard3  {
+   margin-left: 15%;
+  font-size: 30px;
+}
+
+.textoFriends, .textofriendsbaixo {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  text-indent: 8px;
+  margin-top: 5px;
+}
+.textofriendsbaixo span {
+  color: gray;
+}
+.btfriends {
+  float: right;
+}
+.tamanhofriends {
+  width: 100%;
+}
+.tamanhofriends img {
+  float: left;
+}
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-cards);
+  height: 45%;
+  margin-top: 10%;
+  box-sizing: border-box;
+  text-indent: 0px;
+  border-radius: 4px;
+  padding: 5px 15px;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.noticias p {
+text-align: start;
+padding: 0px;
+margin: 5px 0px 0px 0px;
+}
+.noticias span {
+  color: gray;
+  font-size: 10px;
+}
+.vermais {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+}
+.vermais:hover, .postbuttonfinal:hover, .postbutton:hover, .alinhamentpostbutton:hover {
+  color: black;
+}
+
+.coments {
+  width:95%;
+  height:59px;
+}
+.textobaixo {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 100;
+  font-size: 10px;
+  color: gray;
+}
+.distanciamento {
+  margin-top: 2%;
+  margin-left: 10px;
+}
+.postoutflex {
+  height: auto;
+  width: 100%;
+  padding: 0px 0px 15px 0px;
+}
+.textoSimone p{
+  width: 95%;
+  margin-left: 2%;
+  margin-top: 3%;
+  padding: 0px;
+  text-align: start;
+
+}
+.black {
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+}
+.alinhamentpostbutton {
+ display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 95.5%;
+  height: 35px;
+  gap: 8px;
+  margin-left: 2%;
+  border-bottom: #E0E0E0 solid 1px;
+}
+.coments{
+  display: flex;
+  margin-left: 55%;
+  color: gray;
+}
+.comentariotext {
+  width: 87%;
+  display: flex;
+  margin-left: 2%;
+  float: left;
+  height: 5%;
+}
+.back {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  margin: 0;
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  background-color: rgb(78, 78, 201);
+}
+.back img {
+  padding: 15px;
+}
+.logomobile {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin-top: 15px;
+  }
+@media screen and  (min-width: 1200px)
+{.logomobile {
+  display: none;
+}
+  
+}
+@media screen and (min-width: 992px) and (max-width:1200px)
+ {
+  .logomobile {
+    display: none;
+  }
+  .card3 {
+    display: none}
+  .card2 {
+    width:60vw;
+    }
+    .card1 {
+      width: 40%;
+    }
+    .topo { 
+      padding: 8px 5px 8px 0px;
+    }
+    .pesquisa {
+      right: 30%;
+    }
+    .follow {
+    margin-left: 1%;}
+    .alinhamentpostbutton {
+        right: 5%;
+        }
+        .coments {
+        margin: 0;
+         width: 150px;
+         margin-left: auto;
+        }
+        .comentariotext {
+          width: 80%;
+        }
+        .mascarapost {
+          height: 200px;
+        }
+ }
+  @media screen and (max-width: 991px)
+    {
+      .card1, .card3 {
+        display: none;
+      }
+      .card2 {
+        width: 100%;
+        margin-right: 30px;
+      }
+      .logo {display: none;}
+      .pesquisa {right: 250px;}
+ 
+    .topo {
+      padding: 8px 10px 8px 0px;
+    }
+   .coments2 {
+    display: flex;
+    margin-left: 55%;
+   }
+    }
+  
