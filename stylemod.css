@@ -142,7 +142,7 @@ section h1, p{
   align-items: center;
   flex-direction: column;
   box-sizing:border-box;
-  background-color: rgb(164, 252, 252);
+  background-color: rgb(243 243 243);
   border-radius: 5px;
   width: 47%;
   height: 69px;
@@ -178,10 +178,8 @@ section h1, p{
     margin-right: 5%;
     margin-left: 5%;
   }
- 
   .botoespagina:hover, .seguidores:hover, .botoes:hover, .NewStories:hover, .postbuttonfinal:hover, .postbutton:hover  {
     background-color: var(--cor-botoes);
-   
   }
   .espacamentobotoespagina {
     padding: 40px 41px 25px 40px;
@@ -196,7 +194,6 @@ section h1, p{
     height: 180px;
     border-radius: 4px;
   }
-
   .PhotoStorie, .NewStories {
     display: flex;
     height: 154px;
@@ -206,7 +203,6 @@ section h1, p{
   .PhotoStorie img {
     border-radius: 4px;
   }
-
   .NewStories {
    display: flex;
    margin-left: 0px;
@@ -219,7 +215,11 @@ section h1, p{
    min-height: 150px;
    border-radius: 4px;
   }
- 
+  .NewStories p {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+  }
   .PhotoStorie:hover, .tamanhofriends:hover, .botoespagina:hover, .NewStories:hover, .seguidores:hover, .postbutton:hover, .botoes, .corpesquisa:hover, .postbuttonfinal:hover, .logo:hover,.noticias:hover, .mascaraperfil:hover, .mascara2:hover, .mascarapost:hover, .coments:hover {
     cursor: pointer;
   }
@@ -301,12 +301,10 @@ section h1, p{
   row-gap: 10px;
   margin-bottom: 10%;
 }
-
  .Titulocard3  {
    margin-left: 15%;
   font-size: 30px;
 }
-
 .textoFriends, .textofriendsbaixo {
   display: flex;
   flex-direction: column;
@@ -318,7 +316,6 @@ section h1, p{
   color: gray;
   font-size: 13px;
 }
-
 .btfriends {
   float: right;
 }
@@ -328,7 +325,6 @@ section h1, p{
 .tamanhofriends img {
   float: left;
 }
-
 .noticias {
   display: flex;
   flex-direction: column;
@@ -348,12 +344,10 @@ text-align: start;
 padding: 0px;
 margin: 5px 0px 0px 0px;
 }
-
 .noticias span {
   color: gray;
   font-size: 12px;
 }
-
 .vermais {
   width: 100%;
   text-align: center;
@@ -405,7 +399,6 @@ margin: 5px 0px 0px 0px;
   margin-left: 55%;
   color: gray;
 }
-/*trocar por textarea*/
 .comentariotext {
   width: 87%;
   display: flex;
@@ -413,7 +406,6 @@ margin: 5px 0px 0px 0px;
   float: left;
   height: 5%;
 }
-
 .back {
   width: 48px;
   height: 48px;
@@ -431,7 +423,6 @@ margin: 5px 0px 0px 0px;
 .back img {
   padding: 15px;
 }
-
 .logomobile {
   display: flex;
   width: 48px;
@@ -496,7 +487,6 @@ margin: 5px 0px 0px 0px;
       }
       .logo {display: none;}
       .pesquisa {right: 250px;}
- 
     .topo {
       padding: 8px 10px 8px 0px;
     }
@@ -507,7 +497,6 @@ margin: 5px 0px 0px 0px;
    .seguidores {
     width: 100%;
    }
-
     }
     @media  screen and (min-width: 460px) and ( max-width:750px){
       .coments {
